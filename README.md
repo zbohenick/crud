@@ -7,7 +7,7 @@ After Scaffolding, Files are created in the folders...
 4. System
 
 ## Controllers
-* Sets up a post and checks fixtures each :one
+* Sets up a post and checks fixtures for each :one
 * Makes browser call to post's url
 * Lots of redirect tests (back to post index)
 
