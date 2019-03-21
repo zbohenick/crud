@@ -1,6 +1,6 @@
 # Tests
 
-After Scaffold Files are created in the folders...
+After Scaffolding, Files are created in the folders...
 1. Controllers
 2. Fixtures
 3. Models
