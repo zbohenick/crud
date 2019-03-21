@@ -5,15 +5,16 @@ class PostsTest < ApplicationSystemTestCase
     @post = posts(:one)
   end
 
+  #testing visiting the index of posts
   test "visiting the index" do
     visit posts_url
+    #looking for the h1 tag, expecting Posts
     assert_selector "h1", text: "Posts"
   end
 
   test "creating a Post" do
     visit posts_url
     click_on "New Post"
-
     fill_in "Body", with: @post.body
     fill_in "Title", with: @post.title
     click_on "Create Post"

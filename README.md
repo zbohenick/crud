@@ -1,24 +1,23 @@
-# README
+# Tests
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##First
+After Scaffold Files are created in the folders...
+1. Controllers
+2. Fixtures
+3. Models
+4. System
 
-Things you may want to cover:
+##Controllers
+* Sets up a post and checks fixtures each :one
+* Makes browser call to post's url
+* Lots of redirect tests (back to post index)
 
-* Ruby version
+##Fixtures
+* Holds the .yml files where it sets title string to MyString and body to MyText under one and two
 
-* System dependencies
+##Models
+* I wrote a test that checks the validation for a post to have body text
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##System
+* Tests visiting the index of the Posts
+* Checks the h1 tag and expects "Posts"

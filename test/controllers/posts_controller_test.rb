@@ -1,12 +1,16 @@
 require 'test_helper'
 
 class PostsControllerTest < ActionDispatch::IntegrationTest
+  # Sets up a post and for each test it looks up
+  # the posts's one from the fixtures.
   setup do
     @post = posts(:one)
   end
 
   test "should get index" do
+    #get makes browser call to post's url
     get posts_url
+    #asserts the response as a success
     assert_response :success
   end
 
@@ -16,14 +20,19 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create post" do
+    #checking to see if there is a difference in post count
+    #from before and after
     assert_difference('Post.count') do
+      #if the post count stays the same after creating a post,
+      #this test will fail.
       post posts_url, params: { post: { body: @post.body, title: @post.title } }
     end
-
+    #checks show page once the post is created
     assert_redirected_to post_url(Post.last)
   end
 
   test "should show post" do
+    #gets the post url
     get post_url(@post)
     assert_response :success
   end

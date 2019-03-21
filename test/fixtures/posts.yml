@@ -1,5 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+#sets title string to MyString and body to MyText
 one:
   title: MyString
   body: MyText
